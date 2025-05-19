@@ -1,7 +1,6 @@
 # FontToScratchCostumes
-Convert Fonts to Scratch Costumes
+Griffpatchさんが作成したツールの日本語版フォーク、及び機能改善版です。
 
-Many thanks to RexScratch's Stamp Font Engine Font Injector for the original project
-I have adapted his work for use with generic Scratch Projects & Sprites
+原作者であるGriffpatchさん、RexScratchさんに感謝します。
 
-Try it out here: https://griffpatch.github.io/FontToScratchCostumes/
+ここから試せます: https://hallkun19.github.io/FontToScratchCostumes/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Griffpatch Font To Scratch Costumes</title>
+    <title>フォントをScrachのコスチュームへ</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:r,b,semibold" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
@@ -16,19 +16,19 @@
         <script type="text/javascript" src="crypto-js.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
 
-        <h1>Griffpatch Scratch Font Converter</h1>
-        <p><i>Adapted directly from RexScratch's Stamp Font Engine Font Injector</i></p>
+        <h1>Scrachフォントコンバーター by Griffpatch & Harukun19</h1>
+        <p><i>RexScratchの"Stamp Font Engine Font Injector"をそのまま使用してます。</i></p>
 
-        <h6><b>Step 1</b> - Download Font Files (ttf,otf,zip) to your device</h6>
+        <h6><b>その1</b> - フォントファイル(ttf,otf,zip)をダウンロードしよう！</h6>
 
         <!-- <div class="input-holder">
             <label>Google font: <select id="selectFamily" class="input"></select></label>
         </div> -->
 
-        <p><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> - A wonderful resource for free fonts!</p>
+        <p><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> - これはマジで神なScratchでも使える無料フォントね</p>
         <br>
 
-        <h6><b>Step 2</b> - Import the font into this page here:</h6>
+        <h6><b>その2</b> - フォントをこのページにインポートしよう！</h6>
         <p><input type="file" accept=".ttf,.otf,.zip" onchange="openFont(event)"></p>
         <br>
 
@@ -42,16 +42,17 @@
 
         <div id="fontSelected" style="display: none;">
 
-            <!-- <h6>Character Set to Inject</h6> -->
-            <input type="hidden" id="charset" value=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$¢€£¥%^&amp;*()-–—=≠≈[]\;&apos;‘’,./_+{}|:&quot;“”&lt;≤≥&gt;?`~×÷±°′″">
+            <h6><b>その3</b> - スプライトに入れる文字を入力しよう！</h6>
+            <input id="charset" value=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$¢€£¥%^&amp;*()-–—=≠≈[]\;&apos;‘’,./_+{}|:&quot;“”&lt;≤≥&gt;?`~×÷±°′″">
             <!-- <p style="font-weight:600;">Note: All characters of a pre-existing font will be removed before adding the characters above</p> -->
-
-            <h6><b>Step 3</b> - Do you want to create a new Sprite File, or modify an existing sprite?</h6>
+            <br>
+            <br>
+            <h6><b>その4</b> - 新しいスプライトを作成する？それとも既存のを改造する？</h6>
             <p>
-                <p><i>Creates a New Sprite file for importing into Scratch</i></p>
-                <p><button type="submit" onclick="createNewSprite()">Create a New Sprite</button></p>
-                <p><i>or, Import an existing sprite (exported from Scratch), which is then updated with these new font costumes.</i></p>
-                <p><label><button onclick="document.getElementById('sb3File').click();">Modify Existing Sprite</button><input type="file" id="sb3File" accept=".sprite3" onchange="openSb3(event)" style="display:none;"></label></p>
+                <p><i>Scratchにインポートするための新しいスプライトファイルを作成</i></p>
+                <p><button type="submit" onclick="createNewSprite()">スプライトを作成</button></p>
+                <p><i>または、既存のスプライト（Scratchからエクスポートされたもの）を新しいフォントのコスチュームで更新</i></p>
+                <p><label><button onclick="document.getElementById('sb3File').click();">既存スプライトを改造</button><input type="file" id="sb3File" accept=".sprite3" onchange="openSb3(event)" style="display:none;"></label></p>
 
             <!-- <p style="font-weight:600;">Note: The project must contain a Stamp Font Engine sprite. Using a new project won&apos;t work.</p> -->
             <!-- <h6>Name of Stamp Font Engine Sprite in Project</h6>

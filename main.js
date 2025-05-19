@@ -88,7 +88,7 @@ function openFont(event) {
 
         const font = opentype.parse(reader.result);
         fontSelect.style.display = 'block';
-        const path = font.getPath("ABCDEFGadcdefg - " + font.names.fullName?.en, 8, 24, 22).toPathData(3);
+        const path = font.getPath("Aaあア亜 - " + font.names.fullName?.en, 8, 24, 22).toPathData(3);
         const svg = `<svg width="800px" height="32px" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="${path}"/></svg>`;
         fontSelect.insertAdjacentHTML("beforeend", `<label class='fontRadio'><input type='radio' name='fontSelect' value='${fileName}' checked>${svg}</label>`);
 
